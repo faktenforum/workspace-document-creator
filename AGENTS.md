@@ -14,16 +14,16 @@
 
 | User wants | Source format | Use | Prompt |
 |------------|----------------|-----|--------|
-| PDF, full control | Typst (`.typ`) | `typst compile` | [instructions-typst.md](instructions-typst.md) |
-| PDF from Markdown | Markdown (`.md`) | `pandoc --pdf-engine=typst` | [instructions-pandoc-typst.md](instructions-pandoc-typst.md) |
-| Editable (ODT, DOCX, HTML, EPUB) | Markdown (`.md`) | `pandoc` | [instructions-pandoc.md](instructions-pandoc.md) |
-| Python automation | Any | `uv run` + pypandoc/subprocess | [instructions-python.md](instructions-python.md) |
+| PDF, full control | Typst (`.typ`) | `typst compile` | [.mcp-linux/instructions-typst.md](.mcp-linux/instructions-typst.md) |
+| PDF from Markdown | Markdown (`.md`) | `pandoc --pdf-engine=typst` | [.mcp-linux/instructions-pandoc-typst.md](.mcp-linux/instructions-pandoc-typst.md) |
+| Editable (ODT, DOCX, HTML, EPUB) | Markdown (`.md`) | `pandoc` | [.mcp-linux/instructions-pandoc.md](.mcp-linux/instructions-pandoc.md) |
+| Python automation | Any | `uv run` + pypandoc/subprocess | [.mcp-linux/instructions-python.md](.mcp-linux/instructions-python.md) |
 
 ---
 
 ## uv — Python Scripts
 
-**All Python scripts MUST use uv** to avoid dependency conflicts across projects. See [instructions-uv.md](instructions-uv.md).
+**All Python scripts MUST use uv** to avoid dependency conflicts across projects. See [.mcp-linux/instructions-uv.md](.mcp-linux/instructions-uv.md).
 
 ```bash
 # Run script (deps from inline metadata)
@@ -50,11 +50,11 @@ uv run examples/scripts/md2pdf.py input.md output.pdf
 
 | File | Use case |
 |------|----------|
-| [instructions-typst.md](instructions-typst.md) | Native Typst PDF (letter, report, invoice) |
-| [instructions-pandoc.md](instructions-pandoc.md) | Pandoc → ODT, DOCX, HTML, EPUB |
-| [instructions-pandoc-typst.md](instructions-pandoc-typst.md) | Pandoc + Typst → PDF from Markdown |
-| [instructions-python.md](instructions-python.md) | Python automation (pypandoc, subprocess) |
-| [instructions-uv.md](instructions-uv.md) | uv usage for dependency isolation |
+| [.mcp-linux/instructions-typst.md](.mcp-linux/instructions-typst.md) | Native Typst PDF (letter, report, invoice) |
+| [.mcp-linux/instructions-pandoc.md](.mcp-linux/instructions-pandoc.md) | Pandoc → ODT, DOCX, HTML, EPUB |
+| [.mcp-linux/instructions-pandoc-typst.md](.mcp-linux/instructions-pandoc-typst.md) | Pandoc + Typst → PDF from Markdown |
+| [.mcp-linux/instructions-python.md](.mcp-linux/instructions-python.md) | Python automation (pypandoc, subprocess) |
+| [.mcp-linux/instructions-uv.md](.mcp-linux/instructions-uv.md) | uv usage for dependency isolation |
 
 ## External References
 
@@ -64,3 +64,4 @@ uv run examples/scripts/md2pdf.py input.md output.pdf
 - [Customizing Pandoc (learnbyexample)](https://learnbyexample.github.io/customizing-pandoc/)
 - [Pandoc Python Library](https://boisgera.github.io/pandoc/examples/) — AST manipulation
 - [uv docs](https://docs.astral.sh/uv/)
+
